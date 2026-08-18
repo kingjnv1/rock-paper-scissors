@@ -3,18 +3,23 @@
 <head>
   <meta charset="UTF-8">
   <title>Rock Paper Scissors</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <h1>👑 KING vs 💻 PC</h1>
 
   <!-- Scoreboard -->
-  <p>KING Score: <span id="userScore">0</span></p>
-  <p>PC Score: <span id="pcScore">0</span></p>
+  <div class="scoreboard">
+    KING Score: <span id="userScore">0</span> |
+    PC Score: <span id="pcScore">0</span>
+  </div>
 
   <!-- Buttons -->
-  <button id="rock">Rock</button>
-  <button id="paper">Paper</button>
-  <button id="scissors">Scissors</button>
+  <div class="buttons">
+    <button id="rock">Rock</button>
+    <button id="paper">Paper</button>
+    <button id="scissors">Scissors</button>
+  </div>
 
   <!-- Result -->
   <p id="result">Make your move!</p>
@@ -22,7 +27,6 @@
   <!-- Reset -->
   <button id="reset">Reset</button>
 
-  <!-- Script must be last -->
   <script src="script.js"></script>
 </body>
 </html>

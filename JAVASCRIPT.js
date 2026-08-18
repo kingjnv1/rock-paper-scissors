@@ -26,11 +26,8 @@ function play(userChoice) {
     resultText = `KING chose ${userChoice}, PC chose ${pcChoice}. PC wins!`;
   }
 
-  // ✅ Update scoreboard
   document.getElementById("userScore").textContent = userScore;
   document.getElementById("pcScore").textContent = pcScore;
-
-  // ✅ Update result
   document.getElementById("result").textContent = resultText;
 }
 
