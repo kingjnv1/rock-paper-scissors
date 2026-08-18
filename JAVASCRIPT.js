@@ -1,6 +1,11 @@
 let userScore = 0;
 let pcScore = 0;
 
+document.getElementById("rock").addEventListener("click", () => play("rock"));
+document.getElementById("paper").addEventListener("click", () => play("paper"));
+document.getElementById("scissors").addEventListener("click", () => play("scissors"));
+document.getElementById("reset").addEventListener("click", resetGame);
+
 function play(userChoice) {
   const choices = ["rock", "paper", "scissors"];
   const pcChoice = choices[Math.floor(Math.random() * choices.length)];
