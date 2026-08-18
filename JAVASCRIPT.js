@@ -8,21 +8,24 @@ function play(userChoice) {
   let resultText = "";
 
   if (userChoice === pcChoice) {
-    resultText = `KING chose ${userChoice}, PC chose ${pcChoice}. It's a draw!`;
+    resultText = "It's a draw!";
   } else if (
     (userChoice === "rock" && pcChoice === "scissors") ||
     (userChoice === "paper" && pcChoice === "rock") ||
     (userChoice === "scissors" && pcChoice === "paper")
   ) {
     userScore++;
-    resultText = `KING chose ${userChoice}, PC chose ${pcChoice}. KING wins!`;
+    resultText = "KING wins!";
   } else {
     pcScore++;
-    resultText = `KING chose ${userChoice}, PC chose ${pcChoice}. PC wins!`;
+    resultText = "PC wins!";
   }
 
+  // ✅ Update scoreboard
   document.getElementById("userScore").textContent = userScore;
   document.getElementById("pcScore").textContent = pcScore;
+
+  // ✅ Update result
   document.getElementById("result").textContent = resultText;
 }
 

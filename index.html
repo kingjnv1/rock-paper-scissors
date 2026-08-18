@@ -3,44 +3,24 @@
 <head>
   <meta charset="UTF-8">
   <title>Rock Paper Scissors</title>
-  <link rel="stylesheet" href="style.css?v=12">
 </head>
 <body>
-  <div class="game-wrapper">
-    <!-- Header -->
-    <header class="header">
-      <h1>👑 KING 🎮</h1>
-    </header>
+  <h1>👑 KING vs 💻 PC</h1>
 
-    <!-- Scoreboard -->
-    <section class="scoreboard">
-      <div class="score king-score">
-        <h1>KING</h1>
-        <p id="userScore">0</p>
-      </div>
-      <div class="score pc-score">
-        <h1>STUDENT</h1>
-        <p id="STUDENTScore">0</p>
-      </div>
-    </section>
+  <!-- Scoreboard -->
+  <p>KING Score: <span id="userScore">0</span></p>
+  <p>PC Score: <span id="pcScore">0</span></p>
 
-    <!-- Buttons -->
-    <section class="choices">
-      <button onclick="play('rock')" class="choice">🪨 Rock</button>
-      <button onclick="play('paper')" class="choice">📜 Paper</button>
-      <button onclick="play('scissors')" class="choice">✂️ Scissors</button>
-    </section>
+  <!-- Buttons -->
+  <button onclick="play('rock')">Rock</button>
+  <button onclick="play('paper')">Paper</button>
+  <button onclick="play('scissors')">Scissors</button>
 
-    <!-- Result -->
-    <section class="result">
-      <p id="result">Make your move!</p>
-    </section>
+  <!-- Result -->
+  <p id="result">Make your move!</p>
 
-    <!-- Reset -->
-    <footer class="footer">
-      <button onclick="resetGame()" class="reset-btn">🔄 Reset Score</button>
-    </footer>
-  </div>
+  <!-- Reset -->
+  <button onclick="resetGame()">Reset</button>
 
   <script src="script.js"></script>
 </body>
