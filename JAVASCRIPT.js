@@ -8,17 +8,17 @@ function play(userChoice) {
   let resultText = "";
 
   if (userChoice === pcChoice) {
-    resultText = "It's a draw!";
+    resultText = `Draw! Both chose ${userChoice}`;
   } else if (
     (userChoice === "rock" && pcChoice === "scissors") ||
     (userChoice === "paper" && pcChoice === "rock") ||
     (userChoice === "scissors" && pcChoice === "paper")
   ) {
     userScore++;
-    resultText = "KING wins!";
+    resultText = `KING chose ${userChoice}, PC chose ${pcChoice}. KING wins!`;
   } else {
     pcScore++;
-    resultText = "PC wins!";
+    resultText = `KING chose ${userChoice}, PC chose ${pcChoice}. PC wins!`;
   }
 
   // ✅ Update scoreboard
